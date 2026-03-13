@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyek Mini - Sistem Antrian Job Shop</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="Proyek_Mini.css">
+
+</head>
+
+<body>
+
+<header class="header-pink text-white text-center py-4 shadow">
+<h1>Proyek Mini - Sistem Antrian Job Shop</h1>
+<p class="mb-0">Ardita Natalia</p>
+<p class="mb-0">NIM: 23051430022</p>
+</header>
+
+<div class="container mt-5">
+
+<!-- tombol -->
+<div class="text-center mb-4">
+<button class="btn btn-pink" onclick="jalankanSimulasi()">
+Mulai Simulasi
+</button>
+</div>
+
+<!-- daftar antrian -->
+<div class="card shadow mb-4">
+<div class="card-body">
+
+<h4 class="mb-3 text-center">Daftar Antrian Mesin</h4>
+
+<table class="table table-bordered text-center">
+<thead class="table-pink">
+<tr>
+<th>ID Job</th>
+<th>Proses</th>
+<th>Durasi (menit)</th>
+</tr>
+</thead>
+
+<tbody id="tabelAntrian"></tbody>
+
+</table>
+
+</div>
+</div>
+
+<!-- status mesin -->
+<div class="card shadow mb-4">
+<div class="card-body text-center">
+
+<h4>Status Mesin</h4>
+
+<p id="statusMesin">Mesin siap dijalankan...</p>
+
+<div class="progress">
+<div id="progressBar" class="progress-bar bg-pink" style="width:0%"></div>
+</div>
+
+</div>
+</div>
+
+<!-- log proses -->
+<div class="card shadow">
+<div class="card-body">
+
+<h4 class="text-center mb-3">Log Proses Mesin</h4>
+
+<div id="logProses"></div>
+
+</div>
+</div>
+
+</div>
+
+<script src="Proyek_Mini.js"></script>
+
+</body>
+</html>

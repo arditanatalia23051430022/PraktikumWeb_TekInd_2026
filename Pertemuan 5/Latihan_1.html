@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 - Function</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color:#f4f4f4;
+        }
+
+        .bg-pink{
+            background-color:#ff69b4;
+        }
+
+        .card{
+            border-radius:15px;
+        }
+
+        /* tombol pink */
+        .btn-pink{
+            background-color:#ff69b4;
+            color:white;
+            border:none;
+        }
+
+        .btn-pink:hover{
+            background-color:#ff4fa3;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-pink text-white text-center py-4 shadow">
+    <h1>Latihan 1 - Function</h1>
+    <p class="mb-0">Ardita Natalia</p>
+    <p class="mb-0">NIM: 23051430022</p>
+</header>
+
+<div class="container mt-5">
+
+    <!-- INPUT -->
+    <div class="card p-4 shadow mb-4">
+        <h3 class="text-center mb-4">Input Data Lingkaran</h3>
+
+        <label class="form-label">Masukkan Jari-jari</label>
+        <input type="number" id="jariJari" class="form-control" placeholder="Masukkan angka">
+
+        <button onclick="hitung()" class="btn btn-pink mt-3 w-100">
+            Hitung
+        </button>
+    </div>
+
+    <!-- HASIL -->
+    <div class="card p-4 shadow">
+        <h3 class="text-center mb-4">Hasil Perhitungan</h3>
+
+        <p id="luas">Luas Lingkaran : -</p>
+        <p id="keliling">Keliling Lingkaran : -</p>
+
+    </div>
+
+</div>
+
+<script src="Latihan_1.js"></script>
+
+</body>
+</html>
