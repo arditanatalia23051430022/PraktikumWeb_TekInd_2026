@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
+    <link rel="stylesheet" href="Latihan_1.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Profil Mesin CNC-01_Ardita Natalia 23051430022</h1>
+</header>
+
+<main>
+
+    <section>
+        <h2>Spesifikasi Teknis</h2>
+        <ul>
+            <li><strong>Merk:</strong> Yamazaki Mazak</li>
+            <li><strong>Kapasitas:</strong> 500 unit/hari</li>
+            <li><strong>Status:</strong> <span style="color: green;">Operasional</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Jadwal Pemeliharaan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Jenis Perawatan</th>
+                    <th>Penanggung Jawab</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12 Jan 2024</td>
+                    <td>Penggantian Oli</td>
+                    <td>Teknisi A</td>
+                    <td>Ok</td>
+                </tr>
+                <tr>
+                    <td>15 Feb 2024</td>
+                    <td>Kalibrasi Presisi</td>
+                    <td>Teknisi B</td>
+                    <td>Pending</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Input Data Harian</h2>
+
+        <form>
+            <label for="tanggal">Tanggal:</label>
+            <input type="date" id="tanggal" required>
+
+            <label for="shift">Shift Kerja:</label>
+            <select id="shift">
+                <option>Pagi (08:00 - 16:00)</option>
+                <option>Siang (16:00 - 24:00)</option>
+                <option>Malam (00:00 - 08:00)</option>
+            </select>
+
+            <label for="jumlah">Jumlah Produksi (Unit):</label>
+            <input type="number" id="jumlah" placeholder="Masukkan jumlah..." max="600">
+
+            <label for="catatan">Catatan Kerusakan:</label>
+            <textarea id="catatan" rows="4" placeholder="Deskripsikan jika ada kendala..."></textarea>
+
+            <button type="submit">Simpan Data</button>
+        </form>
+    </section>
+
+    <!-- ===================== -->
+    <!-- PANEL PRAKTIKUM -->
+    <!-- ===================== -->
+    <section>
+        <h2>Panel Kontrol Mesin</h2>
+
+        <div class="panel">
+
+            <div id="statusIndicator">
+                Status: <strong>UNKNOWN</strong>
+            </div>
+
+            <h2 id="suhuMesin">25 °C</h2>
+            <p>Suhu Operasional Saat Ini</p>
+
+            <div class="btn-group">
+                <button id="btnStart">START</button>
+                <button id="btnStop" disabled>STOP</button>
+                <button id="btnReset">RESET</button>
+
+                <!-- TAMBAHAN -->
+                <button id="btnMaintenance">MAINTENANCE MODE</button>
+            </div>
+
+            <label>Set Target Kecepatan (RPM):</label>
+            <input type="number" id="inputRPM" placeholder="Max 2000">
+            <small id="pesanError">RPM melebihi batas aman!</small>
+
+        </div>
+    </section>
+
+</main>
+
+<script src="Latihan_1.js"></script>
+
+</body>
+</html>
