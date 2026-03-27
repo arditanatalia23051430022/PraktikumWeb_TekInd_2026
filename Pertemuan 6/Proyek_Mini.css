@@ -1,0 +1,57 @@
+body{
+    background:linear-gradient(135deg,#ffd6ec,#ffe9f5);
+    font-family:Segoe UI;
+    margin:0;
+}
+
+/* HEADER */
+.header-pink{
+    background:linear-gradient(90deg,#ff69b4,#ff4fa3);
+    padding:40px;
+    text-align:center;
+    color:white;
+    margin-bottom:30px; /* biar ada jarak */
+}
+
+/* CARD */
+.card{
+    background:#f8f8f8;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    width:60%;
+    margin:30px auto; /* jarak antar card & dari atas */
+    padding:20px;
+}
+
+/* INPUT */
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* LOG */
+.log-item{
+    background:#fff0f7;
+    padding:8px;
+    margin-top:6px;
+    border-radius:8px;
+    font-size:14px;
+}
+
+/* PROGRESS */
+.progress{
+    height:20px;
+    background:#ddd;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    height:100%;
+    width:0%;
+    background:#ff69b4;
+    transition:width 0.4s;
+}

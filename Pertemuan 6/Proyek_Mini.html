@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Tagihan Listrik</title>
+    <link rel="stylesheet" href="Proyek_Mini.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header-pink">
+    <h1>Proyek Mini - Kalkulator Tagihan Listrik</h1>
+    <p>Ardita Natalia</p>
+    <p>NIM: 23051430022</p>
+</div>
+
+<!-- CARD INPUT -->
+<div class="card">
+    <h2 style="text-align:center;">Input Data Listrik</h2>
+
+    <label>Daya (Watt)</label>
+    <input type="number" id="daya" placeholder="Contoh: 900">
+
+    <label>Jam Pemakaian</label>
+    <input type="number" id="jam" placeholder="Contoh: 5">
+
+    <hr>
+
+    <h3 id="kwh">Total kWh: 0</h3>
+    <h3 id="biaya">Estimasi Biaya: Rp 0</h3>
+</div>
+
+<!-- CARD STATUS -->
+<div class="card">
+    <h2 style="text-align:center;">Status Perhitungan</h2>
+    <p id="status">Menunggu input...</p>
+
+    <div class="progress">
+        <div id="progressBar" class="progress-bar"></div>
+    </div>
+</div>
+
+<!-- LOG -->
+<div class="card">
+    <h2 style="text-align:center;">Log Perhitungan</h2>
+    <div id="log"></div>
+</div>
+
+<script src="Proyek_Mini.js"></script>
+</body>
+</html>
