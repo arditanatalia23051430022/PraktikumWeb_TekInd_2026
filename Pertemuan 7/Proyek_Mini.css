@@ -1,0 +1,30 @@
+header {
+    background: linear-gradient(to right, #89CFF0, #5DADE2);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+header h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 3px 0;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: #5DADE2;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #3498DB;
+}

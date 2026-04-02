@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aplikasi Checklist 5S</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Proyek_Mini.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Proyek Mini - Aplikasi Checklist 5S</h2> 
+        <p>Ardita Natalia</p>
+        <p>NIM: 23051430022</p>
+    </header>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- FORM -->
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h5 class="mb-3">Form Audit 5S</h5>
+
+                    <label class="form-label">Nama Auditor</label>
+                    <input type="text" id="auditor" class="form-control mb-3" placeholder="Masukkan nama auditor">
+
+                    <label class="form-label">Checklist 5S</label>
+
+                    <div class="form-check">
+                        <input class="form-check-input checklist" type="checkbox">
+                        <label class="form-check-label">Seiri</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input checklist" type="checkbox">
+                        <label class="form-check-label">Seiton</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input checklist" type="checkbox">
+                        <label class="form-check-label">Seiso</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input checklist" type="checkbox">
+                        <label class="form-check-label">Seiketsu</label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input checklist" type="checkbox">
+                        <label class="form-check-label">Shitsuke</label>
+                    </div>
+
+                    <div class="mb-3">
+                        <strong>Skor Saat Ini: </strong>
+                        <span id="skorLive">0%</span>
+                    </div>
+
+                    <button class="btn btn-primary w-100" onclick="simpanData()">
+                        Simpan Audit
+                    </button>
+                </div>
+            </div>
+
+            <!-- TABEL -->
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h5 class="mb-3">Riwayat Audit</h5>
+
+                    <!-- FILTER -->
+                    <input 
+                        type="text" 
+                        id="cariAuditor" 
+                        class="form-control mb-3" 
+                        placeholder="Cari Nama Auditor..."
+                    >
+
+                    <!-- SORT -->
+                    <select id="sortSkor" class="form-select mb-3">
+                        <option value="">Urutkan Skor</option>
+                        <option value="desc">Skor Tertinggi</option>
+                        <option value="asc">Skor Terendah</option>
+                    </select>
+
+                    <table class="table table-bordered text-center">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Tanggal</th>
+                                <th>Auditor</th>
+                                <th>Skor</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabelData"></tbody>
+                    </table>
+
+                    <button id="btnHapusSemua" class="btn btn-danger w-100 mt-3">
+                        Hapus Semua Data
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JS External -->
+    <script src="Proyek_Mini.js"></script>
+
+</body>
+</html>
