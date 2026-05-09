@@ -6,11 +6,13 @@ import {
   CategoryScale,
   LinearScale,
   BarElement,
+  BarController,
+  LineElement,
+  LineController,
+  PointElement,
   Title,
   Tooltip,
-  Legend,
-  LineElement,
-  PointElement
+  Legend
 } from 'chart.js';
 
 // registrasi chart
@@ -18,11 +20,13 @@ ChartJS.register(
   CategoryScale,
   LinearScale,
   BarElement,
+  BarController,
+  LineElement,
+  LineController,
+  PointElement,
   Title,
   Tooltip,
-  Legend,
-  LineElement,
-  PointElement
+  Legend
 );
 
 function GrafikProduksi({ dataProduksi }) {
@@ -74,6 +78,7 @@ function GrafikProduksi({ dataProduksi }) {
       title: {
         display: true,
         text: 'Grafik Produksi Harian - Lini 1',
+
         font: {
           size: 20
         }
