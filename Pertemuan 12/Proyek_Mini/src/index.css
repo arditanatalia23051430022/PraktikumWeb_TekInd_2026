@@ -40,7 +40,10 @@ body {
 
   left: 0;
   top: 0;
-  bottom: 0;
+
+  height: 100dvh;
+
+  overflow-y: auto;
 
   z-index: 1000;
 
@@ -344,6 +347,40 @@ body {
 }
 
 /* =========================
+   BUTTON BACK
+========================= */
+
+.dashboard-back-btn {
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #3b82f6
+  );
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 10px 18px;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+
+  display: inline-block;
+
+  transition: 0.3s ease;
+}
+
+.dashboard-back-btn:hover {
+  color: white;
+
+  text-decoration: none;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
    ANIMATION
 ========================= */
 
@@ -402,7 +439,11 @@ body {
 
     width: 270px;
 
-    height: 100vh;
+    height: 100dvh;
+
+    overflow-y: auto;
+
+    padding-top: 90px;
   }
 
   .sidebar.show {
@@ -467,28 +508,25 @@ body {
     width: 100%;
   }
 
+  .dashboard-back-btn {
+    width: auto !important;
+  }
+
   .card,
   .bg-white {
     border-radius: 18px !important;
   }
 
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .menu-item {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+
   canvas {
     max-height: 300px !important;
   }
-}
-.dashboard-back-btn {
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
-  color: white;
-  text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 12px;
-  font-weight: 600;
-  display: inline-block;
-  transition: 0.3s ease;
-}
-
-.dashboard-back-btn:hover {
-  color: white;
-  text-decoration: none;
-  transform: translateY(-2px);
 }
