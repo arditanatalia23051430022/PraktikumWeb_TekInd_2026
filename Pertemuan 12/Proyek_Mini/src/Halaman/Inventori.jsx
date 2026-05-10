@@ -48,7 +48,7 @@ function Inventori() {
           <p>Monitoring stok bahan baku produksi</p>
         </div>
 
-        <Link to="/" className="back-btn">
+        <Link to="/" className="dashboard-back-btn">
           ← Dashboard
         </Link>
       </div>

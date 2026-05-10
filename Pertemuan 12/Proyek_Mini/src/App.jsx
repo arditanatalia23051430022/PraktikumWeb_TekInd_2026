@@ -13,7 +13,6 @@ function App() {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // otomatis tutup sidebar saat resize desktop
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 991) {
@@ -31,13 +30,23 @@ function App() {
   return (
     <div className="layout">
 
-      {/* TOGGLE BUTTON MOBILE */}
-      <button
-        className="menu-toggle"
-        onClick={() => setSidebarOpen(!sidebarOpen)}
-      >
-        ☰
-      </button>
+      {/* MOBILE HEADER */}
+      <div className="mobile-topbar">
+
+        <button
+          className={`menu-toggle ${sidebarOpen ? 'active' : ''}`}
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <h3 className="mobile-title">
+          Smart Factory
+        </h3>
+
+      </div>
 
       {/* OVERLAY */}
       {sidebarOpen && (

@@ -19,7 +19,7 @@ function Dashboard() {
   const efficiency = ((totalOutput / totalTarget) * 100).toFixed(1);
 
   return (
-    <div className="container-fluid p-4">
+    <div className="container-fluid dashboard-container">
 
       {/* HEADER */}
       <div
